@@ -10,6 +10,7 @@ class DessinFractale{
 	Turtle.setCanvasSize(LARGEUR,HAUTEUR);//à appeler APRES création de la tortue
     }
 
+
     public DessinFractale(int v){
 	//attention, plus v est grand, plus bob va lentement !
 	this();
