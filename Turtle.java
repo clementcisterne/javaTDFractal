@@ -241,7 +241,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         colors.put("antiquewhite", new Color(0xfaebd7));
         colors.put("aqua", new Color(0x00ffff));
         colors.put("aquamarine", new Color(0x7fffd4));
-        colors.put("azure", new Color(0xf0ffff));
+        colors.put("azure", new Color(0xF0FFFF));
         colors.put("beige", new Color(0xf5f5dc));
         colors.put("bisque", new Color(0xffe4c4));
         colors.put("black", new Color(0x000000));
