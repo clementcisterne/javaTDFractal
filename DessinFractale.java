@@ -263,6 +263,37 @@ class DessinFractale{
 
 		}
 	}
+	
+	/** siperskin by @Cyboulette **/
+    public void sierpinski(double lenght, double n) {
+    	bob.hide(); // Parce qu'il est moche bob
+	    
+	// Générer des couleurs aléatoires
+    	Random rand = new Random();
+		float r = rand.nextFloat();
+		float g = rand.nextFloat();
+		float b = rand.nextFloat();
+		Color randomColor = new Color(r, g, b);
+		bob.penColor(randomColor); // Les mettre à bob.
+    	if(n == 0) {
+    		for(int i = 0;i<3; i++) {
+    			bob.forward(lenght);
+    			bob.left(120);
+    		}
+    	} else {
+    		sierpinski(lenght/2, n-1);
+    		bob.forward(lenght/2);
+    		sierpinski(lenght/2, n-1);
+    		bob.backward(lenght/2);
+    		bob.left(60);
+    		bob.forward(lenght/2);
+    		bob.right(60);
+    		sierpinski(lenght/2, n-1);
+    		bob.left(60);
+    		bob.backward(lenght/2);
+    		bob.right(60);
+    	}
+    }
 
 
 
